@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/inventorylogo"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#8BC34A"
+            app:civ_shadow_radius="10" />
+
+        <TextView
+            android:id="@+id/idlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:textColor="#1D81A1"
+            android:textSize="24sp"
+            app:fontFamily="@font/armata" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="32dp"
+            android:text="Username:"
+            android:textColor="#707070"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/armata" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/username"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="10" />
+
+            <EditText
+                android:id="@+id/idusernametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/idpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="Password:"
+            android:textColor="#707070"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/armata" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/passwordicon"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="10" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/idforgto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:text="Forgot Password?"
+            android:textAllCaps="false"
+            android:textColor="#707070"
+            android:textStyle="bold"
+            android:clickable="true"
+            app:fontFamily="@font/armata" />
+
+        <Button
+            android:id="@+id/idloginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            app:fontFamily="@font/armata"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idsignoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signoption"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+
+            android:textColor="#707070" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/facebookicon"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                android:clickable="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="10" />
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/gmailicon"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                android:clickable="true"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="Dont have an account? Sign up" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
