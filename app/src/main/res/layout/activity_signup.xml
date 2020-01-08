@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sign_upbackground"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/sign_up"
@@ -27,7 +27,7 @@
         android:background="#064A8D" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/idfullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view"
@@ -41,10 +41,10 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/idemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
+        android:layout_below="@+id/idfullname"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
@@ -58,14 +58,14 @@
         android:id="@+id/phone_verify"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@+id/email"
+        android:layout_below="@+id/idemail"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp">
 
         <EditText
-            android:id="@+id/phone_no"
+            android:id="@+id/idphonenumber"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="match_parent"
@@ -78,7 +78,7 @@
             android:inputType="phone"/>
 
         <Button
-            android:id="@+id/verify_button"
+            android:id="@+id/idverify_button"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -101,7 +101,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/idpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/phone_verify"
@@ -115,10 +115,10 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/re-type_password"
+        android:id="@+id/idconfirmpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/idpassword"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
@@ -129,10 +129,10 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/sign_up_now"
+        android:id="@+id/idsign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/re-type_password"
+        android:layout_below="@+id/idconfirmpass"
         android:textColor="#FFFFFF"
         android:layout_centerHorizontal="true"
         android:text="Sign Up"
